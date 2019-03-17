@@ -1,2 +1,40 @@
 # HTML5-Server-Sent-Events-SSE
 Server-Sent Events allow a web page to get updates from a server.
+
+
+HTML5 Server-Sent Events
+
+
+Server-Sent Events allow a web page to get updates from a server.
+
+Server-Sent Events - One Way Messaging
+A server-sent event is when a web page automatically gets updates from a server.
+
+This was also possible before, but the web page would have to ask if any updates
+ were available. With server-sent events, the updates come automatically.
+
+Examples: Facebook/Twitter updates, stock price updates, news feeds, sport results, etc.
+
+
+
+Check Server-Sent Events Support
+In the tryit example above there were some extra lines of code to 
+check browser support for server-sent events:
+
+
+if(typeof(EventSource) !== "undefined") {
+  // Yes! Server-sent events support!
+  // Some code.....
+} else {
+  // Sorry! No server-sent events support..
+}
+
+The EventSource Object
+
+In the examples above we used the onmessage event to get messages. 
+But other events are also available:
+
+Events	        Description
+onopen	        When a connection to the server is opened
+onmessage	    When a message is received
+onerror  	    When an error occurs
